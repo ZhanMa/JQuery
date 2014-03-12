@@ -1,0 +1,71 @@
+﻿<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$(".btn1").click(function(){
+		alert("text: "+$("p").text());
+	});
+	$(".btn2").click(function(){
+		alert("HTML: "+$("p").html());
+	});
+	$(".btn3").click(function(){
+		alert("value: "+$("#test").val());
+	});
+	$(".btn4").click(function(){
+		alert("href: "+$("#lian").attr("href"));
+	});
+	$(".btn11").click(function(){
+		$("#test1").text("hello world!");
+	});
+	$(".btn12").click(function(){
+		$("#test2").html("hello <b>aa</b>world!");
+	});
+	$(".btn13").click(function(){
+		$("#name").val("hello world!");
+	});
+	<!-- $(".btn5").click(function(){$("#zhi").attr("href","http://www.hao123.com");}); -->
+    $(".btn5").click(function(){
+		$("#zhi").attr("href":"http://www.hao123.com","title":"hao123");
+	}); 
+	
+});
+</script>
+</head>
+<!-- jquery获取内容和属性
+
+1.text() 所选元素文本内容
+2.html() 所选元素内容（包换html元素）
+3.val() 表单字段的值
+
+
+ -->
+
+
+<body>
+<p>获取<b>文本</b>内容</p>
+<button class="btn1">显示文本内容</button>
+<button class="btn2">显示html元素</button>
+<hr>
+<input type="text" value="abc" id="test"/>
+<button class="btn3">获取字段值</button>
+<hr>
+<h3>获取属性attr()</h3>
+<button class="btn4">获取链接的属性</button>
+<a href="www.abc.com" id="lian">www.abc.com</a>
+<hr>
+<h3>设置内容text()html()val()</h3>
+<button class="btn11">设置text()</button>
+<button class="btn12">设置html</button>
+<button class="btn13">设置字段值</button>
+<p id="test1">aaaaaaa</p>
+<p id="test2">bbbbbbbb</p>
+name:<input type="text" id="name" value="jhon" />
+<h3>设置属性 - attr()</h3>	
+<button class="btn5">修改链接的属性</button>
+<a href="http://abc.com" title="abc" id="zhi">www.abc.com</a>
+
+</body>
+
+
+</html> 

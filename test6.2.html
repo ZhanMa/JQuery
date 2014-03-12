@@ -1,0 +1,37 @@
+﻿<html>
+<head><title>jQuery 遍历6.2</title>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$("span").parentsUntil("div").css({"color":"red","border":"1px solid red"});
+		//
+	});
+
+
+</script>
+<!--
+	用于向上遍历DOM树
+	parent();parents();parentsUntil()
+	
+	
+
+-->
+
+<style>
+.ancestors *{
+	display:block;
+	padding:5px;
+	margin:15px;
+	border:1px solid lightgrey;
+	color:lightgrey;
+}
+</style>
+</head>
+<body class="ancestors">
+    	<div >
+        	<ul>ul祖先
+            	<li>li(直接父)<span>span</span></li>
+            </ul>
+        </div>    
+</body>
+</html>

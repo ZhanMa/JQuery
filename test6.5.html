@@ -1,0 +1,40 @@
+﻿<html>
+<head><title>jQuery 遍历6.5 find()</title>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$(".des").find("span").css({"color":"red","border":"2px solid red"});
+		
+	});
+
+
+</script>
+<!--
+	用于向下遍历DOM树
+	children();find();
+	
+-->
+
+<style>
+.des *{
+	display:block;
+	padding:5px;
+	margin:15px;
+	border:1px solid lightgrey;
+	color:lightgrey;
+}
+</style>
+</head>
+<body >
+    	
+		<div class="des">
+					<p class="1">子
+						<span>span</span>
+					</p>
+					<p class="2">子
+						<span>span</span>
+					</p>
+		</div>		
+</body>
+</html>

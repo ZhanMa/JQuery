@@ -1,0 +1,38 @@
+﻿<html>
+<head><title>jQuery 遍历6.7同胞遍历 siblings()</title>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$("h2").siblings().css({"color":"red","border":"2px solid red"});
+		//返回所有同胞元素
+	});
+
+
+</script>
+<!--
+
+	用于DOM树进行水平遍历
+	siblings() next() nextAll() nextUnitl() prev() preAll() prevUntil()
+	
+-->
+
+<style>
+.siblings *{
+	display:block;
+	color:lightgrey;
+	border:1px solid lightgrey;
+	padding:5px;
+	margin:15px;
+}
+</style>
+</head>
+<body class="siblings">
+    	<div>
+			<p>p</p>
+			<h2>h2</h2>
+			<h3>h3</h3>
+		</div>
+			
+</body>
+</html>
